@@ -1,0 +1,52 @@
+/* start global fonts */
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+/* end global fonts */
+
+/* start variables */
+@import 'variables';
+/* end variables */
+
+/* start global style */
+body {
+    font-family: $main_font;
+}
+
+/* end global style */
+
+/* start main menu */
+section.main-menu {
+    .navbar {
+        &.bg-light {
+            background-color: #fff!important;
+        }
+        .navbar-brand {
+            font-family: $logo_font;
+            padding: 0 0 0 70px;
+        }
+
+        .navbar-nav {
+            margin-left: 100px;
+            .nav-link {
+                text-transform: capitalize;
+                padding-right: 15px;
+                font-weight: 600;
+                color: rgb(21 21 21);
+                font-size: 18px;
+            }
+        }
+    }
+    .cart {
+        i {
+            color: #000;
+        }
+        a {
+
+        }
+        span {
+
+        }
+    }
+}
+
+/* end main menu */
