@@ -1,0 +1,312 @@
+/*** products ***/
+section.products {
+    background-color: #e4e5e7;
+    padding: 50px 0;
+
+    .sort-by {
+        background-color: #fff;
+        border-radius: 5px;
+        margin-bottom: 25px;
+
+        .box {
+            padding: 10px 20px 10px 20px;
+
+            .sort {
+                color: $gray;
+                font-size: $small_font_size;
+                margin-right: 20px
+            }
+
+            select {
+                border: none;
+                color: $theme_color;
+                font-size: $small_font_size;
+
+                &:focus {
+                    border: none;
+                    outline: none
+                }
+            }
+
+            &.box1 {
+                border-right: 1px solid #e4e5e7
+            }
+
+            &.box2 {
+                border-right: 1px solid #e4e5e7;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .keywords {
+                    color: $theme_color;
+                    font-size: $small_font_size;
+                    margin-right: 5px
+                }
+
+                .input-field {
+                    background-color: #f0f2f7;
+                    border-radius: 25px;
+                    padding: 5px 10px;
+                    border: none;
+                    font-size: $small_font_size;
+                    margin-right: 10px;
+
+                    &.input-keyword {
+                        max-width: 100px
+                    }
+                }
+
+                .price {
+                    font-size: $small_font_size;
+                    margin-right: 5px
+                }
+
+                .input-price {
+                    max-width: 60px
+                }
+
+                .free-shipping {
+                    font-size: $small_font_size;
+                    margin-left: 20px;
+                    display: inline-block;
+                    margin-left: 0;
+
+                    i {
+                        color: #00e2aa
+                    }
+                }
+            }
+
+            &.box3 {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .products-area {
+        display: flex;
+        justify-content: center;
+
+        .filters {
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: #fff;
+            margin-bottom: 25px;
+
+            .card {
+                text-align: left;
+                border-radius: 0;
+                border: none;
+                border-bottom: 1px solid #e4e5e7;
+
+                .card-header {
+                    border-bottom: none;
+                    background-color: #fff;
+
+                    .btn {
+                        border: none;
+                        font-size: 13px;
+                        color: $theme_color;
+                        padding: 0
+                    }
+                }
+
+                .collapse {
+                    .card-body {
+                        background-color: #f0f2f7;
+
+                        ul {
+                            padding: 0;
+                            list-style: none;
+
+                            li {
+                                color: #a1a7bd;
+                                font-size: $small_font_size;
+                                margin-bottom: 15px;
+                                font-weight: 600
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .available {
+            background-color: #fff;
+            border-radius: 5px;
+
+            h3 {
+                font-size: $small_font_size;
+                color: $theme_color;
+                font-weight: 600;
+                padding: 20px;
+                margin-bottom: 0
+            }
+
+            .form-check-area {
+                padding: 20px;
+                border-bottom: 1px solid #f0f2f7;
+                border-top: 1px solid #f0f2f7;
+
+                .form-check {
+                    margin-bottom: 10px;
+
+                    &:last-child {
+                        margin-bottom: 0
+                    }
+
+                    .form-check-label {
+                        font-size: $small_font_size + 2;
+                        font-weight: 600
+                    }
+
+                    input[type='radio']:after {
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 15px;
+                        top: -2px;
+                        left: -1px;
+                        position: relative;
+                        background-color: #fff;
+                        content: '';
+                        display: inline-block;
+                        visibility: visible;
+                        border: 2px solid #e4e8f0;
+                    }
+
+                    input[type='radio']:checked:after {
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 15px;
+                        top: -2px;
+                        left: -1px;
+                        position: relative;
+                        background-color: #00deea;
+                        content: '';
+                        display: inline-block;
+                        visibility: visible;
+                        border: 2px solid #e4e8f0;
+                    }
+                }
+            }
+
+            .brands-area {
+                padding: 20px;
+                border-top: 1px solid #f0f2f7;
+
+                .form-check-label {
+                    font-size: $small_font_size + 2;
+                    font-weight: 600
+                }
+
+                .form-check {
+                    margin-bottom: 10px;
+
+                    &:last-child {
+                        margin-bottom: 0
+                    }
+                }
+
+            }
+        }
+
+        .our-products {
+            border-radius: 5px;
+
+            .single-product {
+                padding: 30px 25px;
+                border-radius: 5px;
+                background-color: #fff;
+                margin-bottom: 25px;
+                text-align: center;
+
+
+                .image {
+                    margin-bottom: 20px;
+                }
+
+                .details {
+                    .title {
+                        font-size: 16px;
+                        color: $theme_color
+                    }
+
+                    .color {
+                        color: $gray;
+                        font-size: $small_font_size + 1;
+                        margin-bottom: 0
+                    }
+
+                    .price {
+                        font-size: $small_font_size + 1
+                    }
+                }
+
+                &.different-product {
+                    padding: 0;
+                    overflow: hidden;
+                    position: relative;
+
+                    .image {
+                        margin-bottom: 0;
+                        height: 295px;
+                        overflow: hidden
+                    }
+
+                    .price {
+                        position: absolute;
+                        left: 10px;
+                        top: 10px;
+                        background-color: #000;
+                        color: #fff;
+                        padding: 3px 7px;
+                        border-radius: 5px
+                    }
+
+                    .details {
+                        padding: 17px 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .part {
+                            display: inline-block
+                        }
+
+                        .buy {
+                            display: flex;
+
+                            span {
+                                border: 1px solid #ddd;
+                                border-right: none;
+                                display: inline-block;
+                                padding: 6px 20px;
+                                border-radius: 25px 0 0 25px;
+                                font-size: $small_font_size;
+                                font-weight: 600;
+                                margin-right: -4px
+                            }
+
+                            a {
+                                background-color: #fff;
+                                border-radius: 0 25px 25px 0;
+                                padding: 6px 20px;
+                                font-size: $small_font_size;
+                                font-weight: 600;
+                                border: 1px solid #ddd;
+
+                                &:hover {
+                                    border: 1px solid #ddd
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*** products ***/

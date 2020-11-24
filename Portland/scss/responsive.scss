@@ -1,0 +1,229 @@
+@media (max-width: 1199px) {
+    section.main-menu {
+        .navbar {
+            .navbar-nav {
+                .nav-link {
+                    padding-right: 8px;
+                }
+            }
+        }
+    }
+
+    /*** products ***/
+    section.products {
+        .sort-by {
+            .box {
+                padding: 10px 20px 10px 20px;
+
+                .sort {
+                    margin-right: 0
+                }
+
+                &.box1 {
+                    border-right: 1px solid #e4e5e7
+                }
+
+                &.box2 {
+                    padding: 10px 0
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-expand-lg {
+        .navbar-toggler {
+            display: inline-block;
+            border: none
+        }
+    }
+
+    section.main-menu {
+        .second-navbar {
+            &.bg-light {
+                padding: 0
+            }
+        }
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 89px;
+        background-color: rgb(255, 255, 255);
+        z-index: 9;
+        width: 100%;
+        left: 0px;
+
+        .navbar-nav {
+            padding-left: 68px;
+            padding-bottom: 10px
+        }
+    }
+
+    section.main-menu .cart span {
+        margin-right: 0
+    }
+
+    /*** banner ***/
+    section.banner {
+        #owl-demo {
+            .item {
+                height: 500px;
+
+                .item-text {
+                    .item-inner {
+                        h2 {
+                            font-size: 26px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    section.banner {
+        .owl-theme {
+            .owl-nav {
+                .owl-prev {
+                    left: 10px;
+                }
+
+                .owl-next {
+                    right: 10px;
+                }
+            }
+        }
+    }
+
+    section.products {
+        .sort-by {
+            .box.box2 {
+                display: block;
+                padding-left: 20px
+            }
+
+            .box.box3 {
+                display: block;
+            }
+        }
+    }
+
+    footer {
+        .top-part {
+            .links {
+                li {
+                    a {
+                        margin-right: 12px
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+
+    /*** banner ***/
+    section.banner {
+        #owl-demo {
+            .item {
+                .item-text {
+                    .item-inner {
+                        text-align: center
+                    }
+                }
+            }
+        }
+
+        .owl-theme {
+            .owl-nav {
+                display: none
+            }
+        }
+    }
+
+    section.products {
+        .products-area {
+            .available {
+                .brands-area {
+                    margin-bottom: 5px
+                }
+            }
+        }
+    }
+
+    /*section.testimoials {
+        .clients {
+            .single-client {
+                text-align: center;
+
+                .name-details {
+                    justify-content: center
+                }
+            }
+        }
+    }*/
+
+    footer {
+        text-align: center;
+
+        .top-part {
+            padding: 30px 0;
+
+            .links {
+                margin-bottom: 10px;
+            }
+        }
+
+        .copyright {
+            padding: 30px 0;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    section.main-menu {
+        .navbar {
+            .navbar-brand {
+                padding: 0
+            }
+
+            .button-menu {
+                padding: 10px 0 10px 0;
+            }
+        }
+
+        .navbar-collapse {
+            top: 59px;
+
+            .navbar-nav {
+                padding-left: 55px;
+                padding-top: 5px;
+            }
+        }
+    }
+
+    section.products {
+        .sort-by {
+            .box.box2 {
+                .input-field {
+                    &.input-keyword {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        .products-area {
+            .our-products {
+                .single-product {
+                    &.different-product {
+                        .image {
+                            height: auto
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
